@@ -1,0 +1,33 @@
+{% extends "news/base.html" %}
+{% block content %}
+<h5>Author: {{ detailnews.author}}</h5>
+<h1>
+    {{detailnews.article}}
+</h1>
+<p>{{detailnews.body}}</p>
+
+{% comment %} {% if request.user==detailnews.author%} {% endcomment %}
+    <a href="/edit/{{ detailnews.pk}}">изменить</a>
+{% comment %} {%  endif %} {% endcomment %}
+
+
+{% endblock  %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

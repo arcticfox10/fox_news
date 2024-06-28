@@ -1,0 +1,50 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <title>Document</title>
+    <style>
+        {% comment %} body{
+            margin: 0;
+            
+            background-color: red;
+
+        }
+
+        nav{
+            padding: 1.5em;
+            background-color: #002651;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 900;
+
+        }
+
+
+
+
+
+
+ {% endcomment %}
+
+
+    </style>
+</head>
+<body>
+    {% include "news/navbar.html" %}
+
+    {% block content  %}
+    {% endblock  %}
+
+    
+</body>
+</html>

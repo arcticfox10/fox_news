@@ -1,0 +1,22 @@
+<nav> 
+    <a href="/"> Homepage</a>\
+    <a href="news/create" >  Create    </a>
+    <div class="nav-menu">
+        {%if user.is_authenticated%}
+            {% if user.userinformation.profile_image %}
+            
+            <img src="{{ user.userinformation.profile_image.url}}" width="25">
+            {% endif %}
+            <a href="/logout">Выйти</a>
+        {%else%}
+            <a href="/register">регистрация</a>
+            <a href="/login">войти</a>
+        {% endif %}
+    </div>
+</nav>
+
+
+
+                                                                                                       
+                                                                               
+ 
